@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+		<title>Music test</title>
+	</head>
+	<body>
+		<h1>Pianinho ♫</h1>
+		<div class="options-wrapper">
+			<div class="input-wrapper">
+				<label>Attack</label>
+				<input id="attackInput" type="range" value="0">
+			</div>
+			<div class="input-wrapper">
+				<label>Sustain</label>
+				<input id="sustainInput" type="range" value="0">
+			</div>
+			<div class="input-wrapper">
+				<label>Release</label>
+				<input id="releaseInput" type="range" value="50">
+			</div>
+			<div class="input-wrapper">
+				<label>Wave</label>
+				<button id="waveButton" class="wave-button sine"></button>
+			</div>
+			<div class="input-wrapper">
+				<label>Pitch</label>
+				<div class="pitch-wrapper">
+					<button id="pitchDown" class="pitch-button">-</button>
+					<p id="pitchDisplay" class="pitch-display">4</p>
+					<button id="pitchUp" class="pitch-button">+</button>
+				</div>
+			</div>
+		</div>
+		<div class="piano-wrapper">
+			<div id="piano" class="piano">
+				<div class="white-key-wrapper">
+					<button data-note="C" data-pitch="0" class="key white-key"></button>
+					<button data-note="D" data-pitch="0" class="key white-key"></button>
+					<button data-note="E" data-pitch="0" class="key white-key"></button>
+					<button data-note="F" data-pitch="0" class="key white-key"></button>
+					<button data-note="G" data-pitch="0" class="key white-key"></button>
+					<button data-note="A" data-pitch="0" class="key white-key"></button>
+					<button data-note="B" data-pitch="0" class="key white-key"></button>
+					<button data-note="C" data-pitch="1" class="key white-key"></button>
+					<button data-note="D" data-pitch="1" class="key white-key"></button>
+					<button data-note="E" data-pitch="1" class="key white-key"></button>
+					<button data-note="F" data-pitch="1" class="key white-key"></button>
+					<button data-note="G" data-pitch="1" class="key white-key"></button>
+					<button data-note="A" data-pitch="1" class="key white-key"></button>
+					<button data-note="B" data-pitch="1" class="key white-key"></button>
+					<button data-note="C" data-pitch="2" class="key white-key"></button>
+				</div>
+				<div class="black-key-wrapper">
+					<button data-note="Db" data-pitch="0" class="key black-key"></button>
+					<button data-note="Eb" data-pitch="0" class="key black-key"></button>
+					<div class="separator"></div>
+					<button data-note="Gb" data-pitch="0" class="key black-key"></button>
+					<button data-note="Ab" data-pitch="0" class="key black-key"></button>
+					<button data-note="Bb" data-pitch="0" class="key black-key"></button>
+					<div class="separator"></div>
+					<button data-note="Db" data-pitch="1" class="key black-key"></button>
+					<button data-note="Eb" data-pitch="1" class="key black-key"></button>
+					<div class="separator"></div>
+					<button data-note="Gb" data-pitch="1" class="key black-key"></button>
+					<button data-note="Ab" data-pitch="1" class="key black-key"></button>
+					<button data-note="Bb" data-pitch="1" class="key black-key"></button>
+					<div class="separator"></div>
+				</div>
+			</div>
+		</div>
+		<script src="main.js"></script>
+	</body>
+</html>
