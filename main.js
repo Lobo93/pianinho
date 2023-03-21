@@ -72,9 +72,10 @@ pitchUp.addEventListener('click', () => {
 })
 
 // Função de som
-let audio
+const audio = new (window.AudioContext || window.webkitAudioContext)()
+window.addEventListener('click', () => audio.resume())
+
 function playSound(wave, frequency, attack, sustain, release) {
-	if (!audio) audio = new AudioContext()
 	const osc = audio.createOscillator()
 	const gain = audio.createGain()
 	osc.type = wave
